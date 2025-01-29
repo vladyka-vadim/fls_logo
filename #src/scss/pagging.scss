@@ -1,0 +1,43 @@
+.pagging {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__arrow {
+		background: url("../img/icons/sl_arrow_grey.svg") 0 0/100% no-repeat;
+		width: 30px;
+		height: 25px;
+		cursor: pointer;
+		@media (min-width: $md2 + px){
+			&:hover {
+				background: url("../img/icons/sl_arrow_h.svg") 0 0/100% no-repeat;
+			}
+		}	
+		&:first-child {
+
+		}
+		&:last-child {
+			transform: rotate(-180deg);
+		}
+	}
+	&__list {
+		margin: 0 35px;
+		display: flex;
+		li {
+		}
+	}
+	&__item {
+		width: 33px;
+		height: 33px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		font-size: 18px;
+		font-weight: 900;
+		color: #333333;
+		&._active {
+			background-color: #fd8424;
+			color: #ffffff;
+		}
+	}
+}
